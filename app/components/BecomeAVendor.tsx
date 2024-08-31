@@ -1,6 +1,5 @@
 'use client'
 
-
 import React from 'react';
 import { Container, Typography, Button, Grid, Box, Paper } from '@mui/material';
 import Slider from 'react-slick';
@@ -11,14 +10,14 @@ const HeroSection = styled(Box)({
   position: 'relative',
   textAlign: 'center',
   color: 'white',
-  backgroundImage: 'url(https://images.pexels.com/photos/926390/pexels-photo-926390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)', // Replace with your image path
+  background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/926390/pexels-photo-926390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)', // Linear gradient and image
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   padding: '80px 20px',
   height: "600px",
-  // filter: 'brightness(50%)',
-
-
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 });
 
 const BecomeAVendor: React.FC = () => {
@@ -44,9 +43,6 @@ const BecomeAVendor: React.FC = () => {
       </HeroSection>
 
       <Container maxWidth="md">
-        {/* Hero Section */}
-
-
         {/* Why Choose Us */}
         <Box sx={{ my: 4 }}>
           <Typography variant="h4" gutterBottom>Why Choose Us?</Typography>
