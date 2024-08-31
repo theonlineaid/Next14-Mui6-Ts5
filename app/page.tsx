@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import BoxLayout, { BoxLayoutItem } from "./components/BoxLayout";
+import BecomeAVendor from "./components/BecomeAVendor";
 
 
 
@@ -13,7 +14,8 @@ export default function Home() {
   ];
   return (
     <main className={styles.main}>
-      <BoxLayout layout={customLayout}  />
+      {/* <BoxLayout layout={customLayout}  /> */}
+      <BecomeAVendor />
     </main>
   );
 }
